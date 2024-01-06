@@ -1,0 +1,149 @@
+::-webkit-scrollbar{
+    display: none;
+    overflow: hidden;
+    z-index: 0;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(32, 35, 32);
+    background-size: cover;
+    font-family: "monster";
+    overflow-x:hidden;
+}
+
+@font-face {
+    font-family: monster;
+    src: url("Montserrat-VariableFont_wght.ttf");
+}
+
+.nav-bar {
+    display: flex;
+    height: 70px;
+    font-family: "monster";
+    font-weight: 100;
+    width:100%;
+    background-color: rgba(49,50,50,1);
+    flex-wrap:nowrap;
+    position: fixed;
+    z-index: 1;
+    filter: drop-shadow(1px 1.5px 10px #8e53b8);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    margin-left: 10px;
+    height: 110px;
+    width: 110px;
+}
+
+.nav-tools{
+    width:100%;
+    display: flex;
+    justify-content: end;
+    align-items:center;
+}
+
+.nav-bar .nav-tools > a {
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 15px;
+    color:white;
+    transition: 0.25s ease-in-out;
+    padding: 8px;
+    font-weight: 500;
+}
+
+.nav-bar .nav-tools > a:hover {
+    color: #8e53b8;
+}
+
+.main {
+    
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap:nowrap;
+    min-width:300px;
+}
+
+.about {
+    margin-top:80px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap:20px;
+    flex-wrap: wrap;
+    position:relative;
+    left:200px;
+    flex-wrap:nowrap;
+}
+
+.about .profile-bio {
+    justify-content: center;
+    align-items:start;
+    display: inline-flex;
+    flex-direction: column;
+    color: white;
+    font-size: 20px;
+    font-family: 'monster';
+    text-align: left;
+    min-width:650px;
+    min-height:400px;
+    border-radius:20px;
+    flex-wrap: wrap;
+}
+.about .profile-bio>h2{
+    margin: 0px;
+    color:#8e53b8;
+    font-size:50px;
+}
+
+.about .profile-bio>h1{
+    font-size:40px;
+    margin: 0px;
+}
+@media (max-width: 800px) {
+    .about .profile-bio {
+      flex-direction: column;
+    }
+  }
+
+@font-face {
+    font-family: nato;
+    src: url("NotoSans-Regular.ttf");
+}
+
+.about .profile-bio>p{
+    margin:0px;
+    font-family:"nato";
+    font-size:12px;
+}
+
+.profile-image > img {
+    border-width:13px;
+    border-radius: 50%;
+}
+.main .about .profile-bio .contact{
+    display: flex;
+    gap: 15px;
+}
+.main .about .profile-bio .contact>a>i{
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    filter: drop-shadow(1px 2px 50px white);
+    transition: 0.3s ease-in-out;
+}
+.main .about .profile-bio .contact>a>i:hover{
+    transform: scale(140%);
+}
