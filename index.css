@@ -84,6 +84,10 @@ body {
     flex-wrap:nowrap;
 }
 
+.main .about{
+    margin-top: 200px;
+}
+
 .about .profile-bio {
     justify-content: center;
     align-items:start;
