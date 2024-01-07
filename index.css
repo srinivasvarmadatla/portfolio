@@ -64,8 +64,8 @@ body {
 }
 
 .main {
-    
     width:100%;
+    height:100vh;
     display: flex;
     flex-direction: column;
     flex-wrap:nowrap;
@@ -73,7 +73,7 @@ body {
 }
 
 .about {
-    margin-top:80px;
+    height:100vh;
     display: flex;
     align-items: center;
     justify-content:center;
@@ -82,10 +82,6 @@ body {
     position:relative;
     left:200px;
     flex-wrap:nowrap;
-}
-
-.main .about{
-    margin-top: 200px;
 }
 
 .about .profile-bio {
